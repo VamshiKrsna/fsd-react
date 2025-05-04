@@ -1,0 +1,42 @@
+.inc-exp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  background: #fff;
+  overflow: visible;
+  width: 340px;
+  margin: 24px auto;
+  height: 120px;
+}
+.inc-exp-container > div {
+  flex: 1;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.inc-exp-container > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 1px;
+  height: 40%;
+  background: #e0e0e0;
+}
+
+.inc-exp-container > div:not(:last-child) {
+  border-right: 3px solid #838383;
+}
+.money-plus {
+    font-size: 24px;
+}
+.money-minus {
+    font-size: 24px;
+}
